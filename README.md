@@ -21,6 +21,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - Pagination
 - beautify the secound page
+- Deployment
 
 ## Available Scripts
 
