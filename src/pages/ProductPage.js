@@ -17,7 +17,6 @@ export default function ProductPage(props) {
 
   return (
     <div className="container">
-      <img src={data.data.images[0].url} alt="POSTER" />
       <h3>
         Title :
         { data.data.title }

@@ -27,8 +27,9 @@ export default function ListingPage() {
               {rows.data.map((row) => (
                 <div className="col-4-app wow fadeInLeft" key={row.id}>
                   <div className="scrollimg">
-                    {row.images.map((image) => (
-                      <Link to={row.id}><img className="img" src={image.url} alt="" /></Link>
+                    { row.images.map((image) => (
+                      image.type === 'POSTER'
+                        ? <Link to={row.id}><img className="img" src={image.url} alt="" /></Link> : ''
                     ))}
                   </div>
                   <h3>{row.title}</h3>
